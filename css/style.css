@@ -1,0 +1,157 @@
+/* Global CSS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Header CSS============== */
+header {
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.144), rgb(10, 10, 10)), url('../images/donation13.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 65vh;
+}
+
+.header-title {
+    padding-top: 70px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+
+.header-para {
+    padding: 10px 400px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.primary-btn {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background: #FF5959;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 13px;
+}
+
+/* Donate-CSS======== */
+.donate-container {
+    text-align: center;
+    margin: 100px 200px;
+}
+.donate-title{
+    /* margin-bottom: 20px; */
+    font-weight: 700;
+font-size: 45px;
+line-height: 54px;
+color: #121212;
+}
+.donate-para{
+    margin-bottom: 30px;
+    margin: 30px 200px;
+    color: #707070;
+}
+.donate-taka-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.taka-color{
+    background: #FFEEEE;
+border: 2px solid #FF5959;
+border-radius: 9px;
+padding: 25px 15px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+}
+.taka {
+    padding: 25px 15px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #707070;
+    background: #FAFAFA;
+    border-radius: 9px;
+}
+.amount-taka{
+    margin-top:30px ;
+    color: #B3B3B3;
+}
+hr{
+    display: block;
+    width: 70%;
+    margin: 5px auto;
+}
+
+
+/* Donate plan CSS--===== */
+.donate-plan{
+    margin: 100px 200px;
+    text-align: center;
+}
+.plan-container{
+    display: flex;
+    gap: 10px;
+    text-align: left;
+}
+.box{
+    background: rgba(79, 157, 166, 0.1);
+    padding: 50px 20px;
+    border-radius: 9px;
+}
+.plan-title{
+    margin: 10px 0;
+}
+.plan-para{
+    margin: 10px 0;
+}
+
+/* Responsive CSS======= */
+@media screen and (max-width:576px) {
+    .header-para {
+        padding: 0;
+    }
+
+    .header-title {
+        padding-top: 40px;
+        font-size: 33px;
+        line-height: 30px;
+    }
+    .donate-container,.donate-plan{
+        margin: 40px 10px;
+    }
+    .donate-para{
+        margin: 20px 10px;
+    }
+    .donate-taka-container{
+        flex-direction: column;
+    }
+    .plan-container{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:577px) and (max-width:1184px) {
+    .header-para {
+        padding: 0;
+    }
+    .header-title{
+        padding-top:50px ;
+    }
+    .donate-container,.donate-plan{
+        margin: 40px 30px;
+    }
+    .donate-para{
+        margin: 20px 20px;
+    }
+}
